@@ -1,6 +1,6 @@
 import argparse
 import sys
-from weather_mcp.server import serve
+from mcp_weather_plus.server import serve
 
 def main():
     parser = argparse.ArgumentParser(description="Weather MCP Server")

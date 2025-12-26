@@ -1,7 +1,7 @@
 import pytest
 from datetime import datetime
-from weather_mcp.services.time import TimeService
-from weather_mcp.exceptions import InvalidParameterError
+from mcp_weather_plus.services.time import TimeService
+from mcp_weather_plus.exceptions import InvalidParameterError
 
 def test_get_current_datetime():
     service = TimeService()

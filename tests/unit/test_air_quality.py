@@ -1,7 +1,7 @@
 import pytest
 import respx
 from httpx import Response
-from weather_mcp.services.air_quality import AirQualityService
+from mcp_weather_plus.services.air_quality import AirQualityService
 
 @pytest.mark.asyncio
 async def test_get_air_quality(respx_mock):

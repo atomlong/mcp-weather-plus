@@ -1,7 +1,7 @@
 [project]
 name = "mcp-weather-plus"
 version = "0.1.0"
-description = "Add your description here"
+description = "Weather MCP Server"
 readme = "README.md"
 authors = [
     { name = "atomlong", email = "atom.long@outlook.com" }
@@ -18,7 +18,7 @@ dependencies = [
 ]
 
 [project.scripts]
-mcp-weather-plus = "weather_mcp:main"
+mcp-weather-plus = "mcp_weather_plus:main"
 
 [build-system]
 requires = ["uv_build>=0.9.18,<0.10.0"]

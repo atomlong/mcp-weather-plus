@@ -1,8 +1,8 @@
 import pytest
 import respx
 from httpx import Response
-from weather_mcp.services.weather import WeatherService
-from weather_mcp.exceptions import GeocodingError
+from mcp_weather_plus.services.weather import WeatherService
+from mcp_weather_plus.exceptions import GeocodingError
 
 @pytest.mark.asyncio
 async def test_get_coordinates_success(respx_mock):

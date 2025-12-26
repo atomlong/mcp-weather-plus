@@ -1,8 +1,8 @@
 from typing import Any, Dict, List, Optional
 import httpx
-from weather_mcp.utils import get_http_client
-from weather_mcp.exceptions import ApiError, GeocodingError
-from weather_mcp.models import Coordinates, WeatherForecast
+from mcp_weather_plus.utils import get_http_client
+from mcp_weather_plus.exceptions import ApiError, GeocodingError
+from mcp_weather_plus.models import Coordinates, WeatherForecast
 
 class WeatherService:
     GEOCODING_URL = "https://geocoding-api.open-meteo.com/v1/search"

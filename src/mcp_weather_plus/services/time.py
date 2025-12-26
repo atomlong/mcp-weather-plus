@@ -1,7 +1,7 @@
 from datetime import datetime
 import pytz
 from typing import Dict, Any
-from weather_mcp.exceptions import InvalidParameterError
+from mcp_weather_plus.exceptions import InvalidParameterError
 
 class TimeService:
     def get_current_datetime(self, timezone_name: str) -> str:

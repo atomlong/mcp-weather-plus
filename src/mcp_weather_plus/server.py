@@ -8,10 +8,10 @@ from starlette.applications import Starlette
 from starlette.routing import Route, Mount
 import uvicorn
 
-from weather_mcp.tools.weather import WeatherTools
-from weather_mcp.tools.air_quality import AirQualityTools
-from weather_mcp.tools.time import TimeTools
-from weather_mcp.utils import close_http_client
+from mcp_weather_plus.tools.weather import WeatherTools
+from mcp_weather_plus.tools.air_quality import AirQualityTools
+from mcp_weather_plus.tools.time import TimeTools
+from mcp_weather_plus.utils import close_http_client
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)

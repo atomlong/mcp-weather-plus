@@ -2,10 +2,10 @@ from typing import Any, Dict, List
 from mcp.server import Server
 from mcp.types import Tool, TextContent, EmbeddedResource, ImageContent
 import mcp.types as types
-from weather_mcp.tools.toolhandler import ToolHandler
-from weather_mcp.services.air_quality import AirQualityService
-from weather_mcp.services.weather import WeatherService
-from weather_mcp.exceptions import InvalidParameterError
+from mcp_weather_plus.tools.toolhandler import ToolHandler
+from mcp_weather_plus.services.air_quality import AirQualityService
+from mcp_weather_plus.services.weather import WeatherService
+from mcp_weather_plus.exceptions import InvalidParameterError
 
 class AirQualityTools(ToolHandler):
     def __init__(self):

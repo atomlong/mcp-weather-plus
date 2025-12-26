@@ -1,8 +1,8 @@
 from typing import Any, Dict, List, Optional
 import httpx
-from weather_mcp.utils import get_http_client
-from weather_mcp.exceptions import ApiError
-from weather_mcp.models import AirQualityData
+from mcp_weather_plus.utils import get_http_client
+from mcp_weather_plus.exceptions import ApiError
+from mcp_weather_plus.models import AirQualityData
 
 class AirQualityService:
     AIR_QUALITY_URL = "https://air-quality-api.open-meteo.com/v1/air-quality"

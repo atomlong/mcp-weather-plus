@@ -12,7 +12,7 @@ async def test_mcp_flow():
     # Define server parameters to run the server in a subprocess
     server_params = StdioServerParameters(
         command="uv",
-        args=["run", "python", "-m", "weather_mcp"],
+        args=["run", "python", "-m", "mcp_weather_plus"],
         env=dict(os.environ),
     )
 

@@ -84,7 +84,7 @@ uv run pytest
 
 ```text
 weather-mcp/
-├── src/weather_mcp/       # Source code
+├── src/mcp_weather_plus/       # Source code
 │   ├── services/          # Business logic and API integrations
 │   ├── tools/             # MCP Tool handlers
 │   ├── server.py          # Server setup and transport logic
