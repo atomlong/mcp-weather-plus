@@ -47,29 +47,29 @@ A Model Context Protocol (MCP) server that provides real-time weather forecasts,
 
 3.  **Run the server (stdio mode - default):**
     ```bash
-    uv run weather-mcp
+    uv run mcp-weather-plus
     ```
 
 4.  **Run the server (HTTP mode):**
     ```bash
-    uv run weather-mcp --mode streamable-http --port 8080
+    uv run mcp-weather-plus --mode streamable-http --port 8080
     ```
 
 ### Docker
 
 1.  **Build the image:**
     ```bash
-    docker build -t weather-mcp .
+    docker build -t mcp-weather-plus .
     ```
 
 2.  **Run container (stdio):**
     ```bash
-    docker run -i weather-mcp
+    docker run -i mcp-weather-plus
     ```
 
 3.  **Run container (HTTP):**
     ```bash
-    docker run -p 8080:8080 weather-mcp --mode streamable-http --port 8080
+    docker run -p 8080:8080 mcp-weather-plus --mode streamable-http --port 8080
     ```
 
 ## 🧪 Testing
@@ -110,7 +110,7 @@ Add the following to your `claude_desktop_config.json`:
     "weather": {
       "command": "uvx",
       "args": [
-        "weather-mcp"
+        "mcp-weather-plus"
       ]
     }
   }
@@ -123,7 +123,7 @@ Add the following to your `claude_desktop_config.json`:
 2.  Add a new server with the following details:
     *   **Name**: `weather` (or any name you prefer)
     *   **Command**: `uvx`
-    *   **Args**: `weather-mcp`
+    *   **Args**: `mcp-weather-plus`
 
 ### Cursor
 
@@ -133,11 +133,11 @@ Add the following to your `claude_desktop_config.json`:
     *   **Name**: `weather`
     *   **Type**: `stdio`
     *   **Command**: `uvx`
-    *   **Args**: `weather-mcp`
+    *   **Args**: `mcp-weather-plus`
 
 ### Connecting via Streamable HTTP (Remote/Docker)
 
-If you are running the server via Docker or on a remote machine using the `streamable-http` mode (e.g., `uv run weather-mcp --mode streamable-http --port 8080`), you can connect to it using the SSE configuration.
+If you are running the server via Docker or on a remote machine using the `streamable-http` mode (e.g., `uv run mcp-weather-plus --mode streamable-http --port 8080`), you can connect to it using the SSE configuration.
 
 **Claude Desktop Config:**
 
