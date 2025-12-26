@@ -119,11 +119,20 @@ Add the following to your `claude_desktop_config.json`:
 
 ### VS Code (Cline)
 
-1.  Open the **MCP Servers** tab in Cline settings.
-2.  Add a new server with the following details:
-    *   **Name**: `weather` (or any name you prefer)
-    *   **Command**: `uvx`
-    *   **Args**: `mcp-weather-plus`
+Add the following to your `cline_mcp_settings.json`:
+
+```json
+{
+  "mcpServers": {
+    "weather": {
+      "command": "uvx",
+      "args": [
+        "mcp-weather-plus"
+      ]
+    }
+  }
+}
+```
 
 ### Cursor
 
